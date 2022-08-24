@@ -1,6 +1,6 @@
 # Python code for 2D random walk.
 import numpy as np
-import pylab
+import pylab as plt
 import random
  
 # defining the number of steps
@@ -29,7 +29,7 @@ for i in range(1, n):
      
  
 # plotting stuff:
-pylab.title("Random Walk ($n = " + str(n) + "$ steps)")
-pylab.plot(x, y)
-pylab.savefig("rand_walk"+str(n)+".png",bbox_inches="tight",dpi=600)
-pylab.show()
+plt.title("Random Walk ($n = " + str(n) + "$ steps)")
+plt.plot(x, y)
+plt.savefig("rand_walk"+str(n)+".png",bbox_inches="tight",dpi=600)
+plt.show()
